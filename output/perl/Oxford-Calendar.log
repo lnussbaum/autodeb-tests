@@ -23,10 +23,19 @@ CPAN: File::Temp loaded ok (v0.2304)
 Using META.json
 Found: Oxford-Calendar 2.10 (liboxford-calendar-perl arch=all)
 Switched to a new branch 'master'
-No APT contents can be loaded.
-Please install 'apt-file' package (at least version 2.5.0) and
-run 'apt-file update' as root.
-Dependencies not updated.
+Using cached Contents from Wed Apr 22 18:06:27 2015
+= Test::More is in core since 5.6.2
++ YAML found in libyaml-perl
+= Time::Piece is in core since 5.9.5
++ Test::Exception found in libtest-exception-perl
++ Date::Calc found in libdate-calc-perl
+= Text::Abbrev is in core since 5.0.0
+= Time::Seconds is in core since 5.9.5
+
+Needs the following debian packages: perl (>= 5.9.5), libyaml-perl, libtest-exception-perl, libdate-calc-perl
+= ExtUtils::MakeMaker is in core since 5.0.0
+
+Needs the following debian packages during building: perl (>= 5.0.0)
 Using maintainer: Lucas Nussbaum <lucas@debian.org>
 Found docs: 
 Using rules: /usr/share/dh-make-perl/rules.dh.tiny

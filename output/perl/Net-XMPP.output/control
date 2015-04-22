@@ -4,12 +4,18 @@ Priority: optional
 Maintainer: Lucas Nussbaum <lucas@debian.org>
 Build-Depends: debhelper (>= 9),
  perl
+Build-Depends-Indep: libauthen-sasl-perl (>= 2.12),
+ liblwp-online-perl (>= 1.07),
+ libxml-stream-perl (>= 1.24),
+ libyaml-tiny-perl (>= 1.41)
 Standards-Version: 3.9.6
 Homepage: https://metacpan.org/release/Net-XMPP
 
 Package: libnet-xmpp-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}, ${perl:Depends},
+ libauthen-sasl-perl (>= 2.12),
+ libxml-stream-perl (>= 1.24)
 Description: XMPP Support Library
  Net::XMPP is a convenient tool to use for any perl script that would like to
  utilize the XMPP Instant Messaging protocol. While not a client in and of

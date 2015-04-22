@@ -3,13 +3,33 @@ Section: perl
 Priority: optional
 Maintainer: Lucas Nussbaum <lucas@debian.org>
 Build-Depends: debhelper (>= 9)
-Build-Depends-Indep: perl
+Build-Depends-Indep: libconvert-pem-perl (>= 0.05),
+ libcrypt-des-perl,
+ libcrypt-dh-perl (>= 0.01),
+ libcrypt-dsa-perl (>= 0.11),
+ libcrypt-idea-perl,
+ libdigest-hmac-perl,
+ libdigest-sha1-perl (>= 2.10),
+ libmath-gmp-perl (>= 1.04),
+ libmath-pari-perl (>= 2.001804),
+ libstring-crc32-perl (>= 1.2),
+ perl
 Standards-Version: 3.9.6
 Homepage: https://metacpan.org/release/Net-SSH-Perl
 
 Package: libnet-ssh-perl-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}, ${perl:Depends},
+ libconvert-pem-perl (>= 0.05),
+ libcrypt-des-perl,
+ libcrypt-dh-perl (>= 0.01),
+ libcrypt-dsa-perl (>= 0.11),
+ libcrypt-idea-perl,
+ libdigest-hmac-perl,
+ libdigest-sha1-perl (>= 2.10),
+ libmath-gmp-perl (>= 1.04),
+ libmath-pari-perl (>= 2.001804),
+ libstring-crc32-perl (>= 1.2)
 Description: Perl client interface to SSH
  Net::SSH::Perl is an all-Perl module implementing an SSH (Secure Shell)
  client. It is compatible with both the SSH-1 and SSH-2 protocols.

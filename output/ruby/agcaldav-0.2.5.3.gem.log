@@ -1,8 +1,8 @@
 -- Creating source tarball from agcaldav-0.2.5.3.gem ...
-tar xfm /tmp/autodeb.ruby.2C1vqh/agcaldav-0.2.5.3.gem
+tar xfm /tmp/autodeb.ruby.msGEoo/agcaldav-0.2.5.3.gem
 "tar xzfm data.tar.gz"
 "zcat metadata.gz > metadata.yml"
-tar czf /tmp/autodeb.ruby.2C1vqh/agcaldav-0.2.5.3.tar.gz agcaldav-0.2.5.3
+tar czf /tmp/autodeb.ruby.msGEoo/agcaldav-0.2.5.3.tar.gz agcaldav-0.2.5.3
 -- Successfully created ./agcaldav-0.2.5.3.tar.gz
 
 -- Creating Debian source package from ./agcaldav-0.2.5.3.tar.gz ...

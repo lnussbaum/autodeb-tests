@@ -1,8 +1,8 @@
 -- Creating source tarball from peach-0.5.1.gem ...
-tar xfm /tmp/autodeb.ruby.lQqbZh/peach-0.5.1.gem
+tar xfm /tmp/autodeb.ruby.25iI8x/peach-0.5.1.gem
 "tar xzfm data.tar.gz"
 "zcat metadata.gz > metadata.yml"
-tar czf /tmp/autodeb.ruby.lQqbZh/peach-0.5.1.tar.gz peach-0.5.1
+tar czf /tmp/autodeb.ruby.25iI8x/peach-0.5.1.tar.gz peach-0.5.1
 -- Successfully created ./peach-0.5.1.tar.gz
 
 -- Creating Debian source package from ./peach-0.5.1.tar.gz ...

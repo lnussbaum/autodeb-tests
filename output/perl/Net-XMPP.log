@@ -66,11 +66,21 @@ CPAN: File::Temp loaded ok (v0.2304)
 Using META.json
 Found: Net-XMPP 1.05 (libnet-xmpp-perl arch=all)
 Switched to a new branch 'master'
-No APT contents can be loaded.
-Please install 'apt-file' package (at least version 2.5.0) and
-run 'apt-file update' as root.
-Dependencies not updated.
+Using cached Contents from Wed Apr 22 18:06:27 2015
 Module::Build needs perl
+= Scalar::Util is in core since 5.7.3
++ XML::Stream >= 1.24 found in libxml-stream-perl (>= 1.24)
+= Digest::SHA is in core since 5.9.3
++ Authen::SASL >= 2.12 found in libauthen-sasl-perl (>= 2.12)
+= perl >= 5.8.0 is in core
+
+Needs the following debian packages: perl (>= 5.9.3), libxml-stream-perl (>= 1.24), libauthen-sasl-perl (>= 2.12)
++ LWP::Online >= 1.07 found in liblwp-online-perl (>= 1.07)
++ YAML::Tiny >= 1.41 found in libyaml-tiny-perl (>= 1.41)
+= Test::More >= 0.92 is in core since 5.10.1
+= Module::Build >= 0.360300 is in core since 5.13.3
+
+Needs the following debian packages during building: liblwp-online-perl (>= 1.07), libyaml-tiny-perl (>= 1.41), perl (>= 5.13.3)
 Using maintainer: Lucas Nussbaum <lucas@debian.org>
 Found docs: 
 Found examples: examples/*

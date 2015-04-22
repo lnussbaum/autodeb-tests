@@ -1,6 +1,6 @@
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 running the following command in directory: ./tmp_py2dsc/caldav-0.3.0
-/usr/bin/python setup.py --command-packages stdeb.command sdist_dsc --dist-dir=/tmp/autodeb.python.6ylsdT --use-premade-distfile=/tmp/autodeb.python.6ylsdT/caldav-0.3.0.tar.gz
+/usr/bin/python setup.py --command-packages stdeb.command sdist_dsc --dist-dir=/tmp/autodeb.python.WUXsMz --use-premade-distfile=/tmp/autodeb.python.WUXsMz/caldav-0.3.0.tar.gz
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 running sdist_dsc
 running egg_info
@@ -11,7 +11,7 @@ writing dependency_links to caldav.egg-info/dependency_links.txt
 reading manifest file 'caldav.egg-info/SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 writing manifest file 'caldav.egg-info/SOURCES.txt'
-CALLING dpkg-source -b caldav-0.3.0 caldav_0.3.0.orig.tar.gz (in dir /tmp/autodeb.python.6ylsdT)
+CALLING dpkg-source -b caldav-0.3.0 caldav_0.3.0.orig.tar.gz (in dir /tmp/autodeb.python.WUXsMz)
 dpkg-source: info: using source format `3.0 (quilt)'
 dpkg-source: info: building caldav using existing ./caldav_0.3.0.orig.tar.gz
 dpkg-source: info: building caldav in caldav_0.3.0-1.debian.tar.xz
@@ -27,7 +27,7 @@ dh clean --with python2 --buildsystem=pybuild
    dh_auto_clean -O--buildsystem=pybuild
 I: pybuild base:170: python2.7 setup.py clean 
 running clean
-removing '/tmp/autodeb.python.6ylsdT/caldav-0.3.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
+removing '/tmp/autodeb.python.WUXsMz/caldav-0.3.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-2.7' does not exist -- can't clean it
    dh_clean -O--buildsystem=pybuild

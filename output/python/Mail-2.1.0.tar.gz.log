@@ -1,6 +1,6 @@
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 running the following command in directory: ./tmp_py2dsc/Mail-2.1.0
-/usr/bin/python setup.py --command-packages stdeb.command sdist_dsc --dist-dir=/tmp/autodeb.python.gEE4AE --use-premade-distfile=/tmp/autodeb.python.gEE4AE/Mail-2.1.0.tar.gz
+/usr/bin/python setup.py --command-packages stdeb.command sdist_dsc --dist-dir=/tmp/autodeb.python.cA3Jsu --use-premade-distfile=/tmp/autodeb.python.cA3Jsu/Mail-2.1.0.tar.gz
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 running sdist_dsc
 running egg_info
@@ -13,7 +13,7 @@ writing entry points to Mail.egg-info/entry_points.txt
 writing manifest file 'Mail.egg-info/SOURCES.txt'
 reading manifest file 'Mail.egg-info/SOURCES.txt'
 writing manifest file 'Mail.egg-info/SOURCES.txt'
-CALLING dpkg-source -b mail-2.1.0 mail_2.1.0.orig.tar.gz (in dir /tmp/autodeb.python.gEE4AE)
+CALLING dpkg-source -b mail-2.1.0 mail_2.1.0.orig.tar.gz (in dir /tmp/autodeb.python.cA3Jsu)
 dpkg-source: info: using source format `3.0 (quilt)'
 dpkg-source: info: building mail using existing ./mail_2.1.0.orig.tar.gz
 dpkg-source: info: building mail in mail_2.1.0-1.debian.tar.xz
@@ -29,7 +29,7 @@ dh clean --with python2 --buildsystem=pybuild
    dh_auto_clean -O--buildsystem=pybuild
 I: pybuild base:170: python2.7 setup.py clean 
 running clean
-removing '/tmp/autodeb.python.gEE4AE/mail-2.1.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
+removing '/tmp/autodeb.python.cA3Jsu/mail-2.1.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-2.7' does not exist -- can't clean it
    dh_clean -O--buildsystem=pybuild

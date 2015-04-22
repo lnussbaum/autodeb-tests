@@ -3,13 +3,19 @@ Section: perl
 Priority: optional
 Maintainer: Lucas Nussbaum <lucas@debian.org>
 Build-Depends: debhelper (>= 9)
-Build-Depends-Indep: perl
+Build-Depends-Indep: libdate-calc-perl,
+ libtest-exception-perl,
+ libyaml-perl,
+ perl
 Standards-Version: 3.9.6
 Homepage: https://metacpan.org/release/Oxford-Calendar
 
 Package: liboxford-calendar-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}, ${perl:Depends},
+ libdate-calc-perl,
+ libtest-exception-perl,
+ libyaml-perl
 Description: unknown
  Oxford::Calendar converts University of Oxford dates (Oxford academic dates)
  to and from Real World dates, and provides information on Terms of the
