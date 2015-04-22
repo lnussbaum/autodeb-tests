@@ -1,0 +1,48 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+running the following command in directory: ./tmp_py2dsc/Mail-2.1.0
+/usr/bin/python setup.py --command-packages stdeb.command sdist_dsc --dist-dir=/tmp/autodeb.python.gEE4AE --use-premade-distfile=/tmp/autodeb.python.gEE4AE/Mail-2.1.0.tar.gz
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+running sdist_dsc
+running egg_info
+creating Mail.egg-info
+writing requirements to Mail.egg-info/requires.txt
+writing Mail.egg-info/PKG-INFO
+writing top-level names to Mail.egg-info/top_level.txt
+writing dependency_links to Mail.egg-info/dependency_links.txt
+writing entry points to Mail.egg-info/entry_points.txt
+writing manifest file 'Mail.egg-info/SOURCES.txt'
+reading manifest file 'Mail.egg-info/SOURCES.txt'
+writing manifest file 'Mail.egg-info/SOURCES.txt'
+CALLING dpkg-source -b mail-2.1.0 mail_2.1.0.orig.tar.gz (in dir /tmp/autodeb.python.gEE4AE)
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building mail using existing ./mail_2.1.0.orig.tar.gz
+dpkg-source: info: building mail in mail_2.1.0-1.debian.tar.xz
+dpkg-source: info: building mail in mail_2.1.0-1.dsc
+dpkg-buildpackage: source package mail
+dpkg-buildpackage: source version 2.1.0-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by unknown <unknown@unknown>
+ dpkg-source --before-build mail-2.1.0
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=pybuild
+   dh_testdir -O--buildsystem=pybuild
+   dh_auto_clean -O--buildsystem=pybuild
+I: pybuild base:170: python2.7 setup.py clean 
+running clean
+removing '/tmp/autodeb.python.gEE4AE/mail-2.1.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+   dh_clean -O--buildsystem=pybuild
+ dpkg-source -b mail-2.1.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building mail using existing ./mail_2.1.0.orig.tar.gz
+dpkg-source: info: building mail in mail_2.1.0-1.debian.tar.xz
+dpkg-source: info: building mail in mail_2.1.0-1.dsc
+ dpkg-genchanges -S -sa >../mail_2.1.0-1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build mail-2.1.0
+dpkg-buildpackage: full upload (original source is included)
+dpkg-source: warning: extracting unsigned source package (mail_2.1.0-1.dsc)
+dpkg-source: info: extracting mail in mail-2.1.0
+dpkg-source: info: unpacking mail_2.1.0.orig.tar.gz
+dpkg-source: info: unpacking mail_2.1.0-1.debian.tar.xz

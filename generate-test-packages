@@ -9,7 +9,7 @@ require 'pp'
 # - Perl: go to cpan.org, search for package, download manually
 
 origdir = Dir::pwd
-['ruby', 'perl'].each do |lang|
+['ruby', 'perl', 'python'].each do |lang|
   Dir::glob("input/#{lang}/*").each do |file|
     puts "### Processing #{file}"
     tempdir = `mktemp -d /tmp/autodeb.#{lang}.XXXXXX`.chomp
@@ -23,6 +23,9 @@ origdir = Dir::pwd
     when 'perl' then
       version = `dpkg -l dh-make-perl | grep ^ii`
       log = `./#{file} 2>&1` # execute the command provided in the file
+    when 'python' then
+      version = `dpkg -l python-stdeb | grep ^ii`
+      log = `py2dsc -d . #{file} 2>&1` # execute the command provided in the file
     else
       raise "Unknown language: #{lang}"
     end

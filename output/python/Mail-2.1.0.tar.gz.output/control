@@ -1,0 +1,32 @@
+Source: mail
+Maintainer: unknown <unknown@unknown>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9)
+Standards-Version: 3.9.1
+
+Package: python-mail
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Simple wrapper over Python's email package for common operat
+ Mail
+ ++++
+ .
+ .. contents :: 
+ .
+ Summary
+ =======
+ .
+ Simple wrapper over Python's email package for common operations.
+ .
+ Get Started
+ ===========
+ .
+ * Download and install from source
+ .
+ Author
+ ======
+ .
+ `James Gardner <http://jimmyg.org>`_
+ .
+

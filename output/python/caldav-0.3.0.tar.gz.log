@@ -1,0 +1,53 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+running the following command in directory: ./tmp_py2dsc/caldav-0.3.0
+/usr/bin/python setup.py --command-packages stdeb.command sdist_dsc --dist-dir=/tmp/autodeb.python.6ylsdT --use-premade-distfile=/tmp/autodeb.python.6ylsdT/caldav-0.3.0.tar.gz
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+running sdist_dsc
+running egg_info
+writing requirements to caldav.egg-info/requires.txt
+writing caldav.egg-info/PKG-INFO
+writing top-level names to caldav.egg-info/top_level.txt
+writing dependency_links to caldav.egg-info/dependency_links.txt
+reading manifest file 'caldav.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'caldav.egg-info/SOURCES.txt'
+CALLING dpkg-source -b caldav-0.3.0 caldav_0.3.0.orig.tar.gz (in dir /tmp/autodeb.python.6ylsdT)
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building caldav using existing ./caldav_0.3.0.orig.tar.gz
+dpkg-source: info: building caldav in caldav_0.3.0-1.debian.tar.xz
+dpkg-source: info: building caldav in caldav_0.3.0-1.dsc
+dpkg-buildpackage: source package caldav
+dpkg-buildpackage: source version 0.3.0-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Cyril Robert <cyril@hippie.io>
+ dpkg-source --before-build caldav-0.3.0
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=pybuild
+   dh_testdir -O--buildsystem=pybuild
+   dh_auto_clean -O--buildsystem=pybuild
+I: pybuild base:170: python2.7 setup.py clean 
+running clean
+removing '/tmp/autodeb.python.6ylsdT/caldav-0.3.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+   dh_clean -O--buildsystem=pybuild
+ dpkg-source -b caldav-0.3.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building caldav using existing ./caldav_0.3.0.orig.tar.gz
+dpkg-source: warning: ignoring deletion of directory caldav.egg-info
+dpkg-source: warning: ignoring deletion of file caldav.egg-info/SOURCES.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file caldav.egg-info/top_level.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file caldav.egg-info/requires.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file caldav.egg-info/PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file caldav.egg-info/not-zip-safe, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file caldav.egg-info/dependency_links.txt, use --include-removal to override
+dpkg-source: info: building caldav in caldav_0.3.0-1.debian.tar.xz
+dpkg-source: info: building caldav in caldav_0.3.0-1.dsc
+ dpkg-genchanges -S -sa >../caldav_0.3.0-1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build caldav-0.3.0
+dpkg-buildpackage: full upload (original source is included)
+dpkg-source: warning: extracting unsigned source package (caldav_0.3.0-1.dsc)
+dpkg-source: info: extracting caldav in caldav-0.3.0
+dpkg-source: info: unpacking caldav_0.3.0.orig.tar.gz
+dpkg-source: info: unpacking caldav_0.3.0-1.debian.tar.xz
