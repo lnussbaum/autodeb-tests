@@ -9,17 +9,20 @@ require 'pp'
 # - Perl: go to cpan.org, search for package, download manually
 
 origdir = Dir::pwd
-['npm', 'ruby', 'perl', 'python'].each do |lang|
+['haskell', 'npm', 'ruby', 'perl', 'python'].each do |lang|
   Dir::glob("input/#{lang}/*").each do |file|
     puts "### Processing #{file}"
     tempdir = `mktemp -d /tmp/autodeb.#{lang}.XXXXXX`.chomp
-    FileUtils::cp(file, tempdir)
+    FileUtils::cp_r(file, tempdir)
     file = File.basename(file)
     Dir::chdir(tempdir)
     case lang
     when 'ruby' then
       version = `dpkg -l gem2deb | grep ^ii`
       log = `gem2deb -s #{file} 2>&1`
+    when 'haskell' then
+      version = `dpkg -l cabal-debian | grep ^ii`
+      log = `cd * ; cabal-debian 2>&1` # execute the command provided in the file
     when 'npm' then
       version = `dpkg -l npm2deb | grep ^ii`
       log = `./#{file} 2>&1` # execute the command provided in the file
