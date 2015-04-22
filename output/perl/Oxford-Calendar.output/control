@@ -1,0 +1,30 @@
+Source: liboxford-calendar-perl
+Section: perl
+Priority: optional
+Maintainer: Lucas Nussbaum <lucas@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Oxford-Calendar
+
+Package: liboxford-calendar-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: unknown
+ Oxford::Calendar converts University of Oxford dates (Oxford academic dates)
+ to and from Real World dates, and provides information on Terms of the
+ University.
+ .
+ The Terms of the University are defined by the Regulations on the number and
+ lengths of terms, available online from
+ .
+ http://www.admin.ox.ac.uk/examregs/03-00_REGULATIONS_ON_THE_NUMBER_AND_LENGTH
+ _OF_TERMS.shtml
+ .
+ This document describes the start and end dates of Oxford Terms.
+ .
+ In addition to this, the dates of Full Term, required to calculate the week
+ number of the term, are prescribed by Council, and published periodically in
+ the University Gazette.
+ .
+ This description was automagically extracted from the module by dh-make-perl.

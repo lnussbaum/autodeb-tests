@@ -1,0 +1,43 @@
+== dh-make-perl 0.84 ==
+CPAN: File::HomeDir loaded ok (v1.00)
+Reading '/home/lucas/.cpan/Metadata'
+  Database was generated on Tue, 21 Apr 2015 20:17:02 GMT
+CPAN: Digest::SHA loaded ok (v5.88)
+Checksum for /home/lucas/.cpan/sources/authors/id/D/DO/DOM/Oxford-Calendar-2.10.tar.gz ok
+CPAN: Archive::Tar loaded ok (v1.96)
+Oxford-Calendar-2.10/
+Oxford-Calendar-2.10/META.json
+Oxford-Calendar-2.10/Changes
+Oxford-Calendar-2.10/SIGNATURE
+Oxford-Calendar-2.10/META.yml
+Oxford-Calendar-2.10/MANIFEST
+Oxford-Calendar-2.10/t/
+Oxford-Calendar-2.10/t/00_all.t
+Oxford-Calendar-2.10/t/02_bug_nearest_dst.t
+Oxford-Calendar-2.10/t/01_bug_sundays_0th_or_earlier.t
+Oxford-Calendar-2.10/Makefile.PL
+Oxford-Calendar-2.10/lib/
+Oxford-Calendar-2.10/lib/Oxford/
+Oxford-Calendar-2.10/lib/Oxford/Calendar.pm
+CPAN: File::Temp loaded ok (v0.2304)
+Using META.json
+Found: Oxford-Calendar 2.10 (liboxford-calendar-perl arch=all)
+Switched to a new branch 'master'
+No APT contents can be loaded.
+Please install 'apt-file' package (at least version 2.5.0) and
+run 'apt-file update' as root.
+Dependencies not updated.
+Using maintainer: Lucas Nussbaum <lucas@debian.org>
+Found docs: 
+Using rules: /usr/share/dh-make-perl/rules.dh.tiny
+pristine-tar: committed liboxford-calendar-perl_2.10.orig.tar.gz.delta to branch pristine-tar
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+**********
+WARNING: a package named
+              'liboxford-calendar-perl'
+         is already available in APT repositories
+Maintainer: Dominic Hargreaves <dom@earth.li>
+Description: University of Oxford calendar conversion routines
+--- Done
