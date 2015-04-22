@@ -1,0 +1,2 @@
+version=3
+https://metacpan.org/release/Net-SSH-Perl   .*/Net-SSH-Perl-v?(\d[\d.-]*)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$

@@ -1,0 +1,125 @@
+== dh-make-perl 0.84 ==
+CPAN: File::HomeDir loaded ok (v1.00)
+Reading '/home/lucas/.cpan/Metadata'
+  Database was generated on Tue, 21 Apr 2015 20:17:02 GMT
+CPAN: Time::HiRes loaded ok (v1.9726)
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/id/T/TU/TURNSTEP/Net-SSH-Perl-1.38.tar.gz
+CPAN: Digest::SHA loaded ok (v5.88)
+Fetching with LWP:
+http://www.perl.org/CPAN/authors/id/T/TU/TURNSTEP/CHECKSUMS
+Checksum for /home/lucas/.cpan/sources/authors/id/T/TU/TURNSTEP/Net-SSH-Perl-1.38.tar.gz ok
+CPAN: Archive::Tar loaded ok (v1.96)
+Net-SSH-Perl-1.38/
+Net-SSH-Perl-1.38/LICENSE
+Net-SSH-Perl-1.38/MANIFEST.SKIP
+Net-SSH-Perl-1.38/eg/
+Net-SSH-Perl-1.38/eg/remoteinteract.pl
+Net-SSH-Perl-1.38/eg/remoteinteract2.pl
+Net-SSH-Perl-1.38/eg/pssh
+Net-SSH-Perl-1.38/eg/cmd.pl
+Net-SSH-Perl-1.38/eg/pscp
+Net-SSH-Perl-1.38/eg/pssh-keygen
+Net-SSH-Perl-1.38/.perlcriticrc
+Net-SSH-Perl-1.38/Changes
+Net-SSH-Perl-1.38/MANIFEST
+Net-SSH-Perl-1.38/lib/
+Net-SSH-Perl-1.38/lib/Net/
+Net-SSH-Perl-1.38/lib/Net/SSH/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Channel.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Key.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Config.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Buffer.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Handle/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Handle/SSH2.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Handle/SSH1.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Handle.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/SSH2.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/SSH1MP.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/Term.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/SSH1Misc.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/Hosts.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/Authfile.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/RSA.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util/SSH2MP.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Kex/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Kex/DH1.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Mac.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/Password.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/KeyboardInt.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/PublicKey.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/KeyboardInteractive.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/Rhosts.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/RSA.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/Rhosts_RSA.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth/ChallengeResponse.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/ChannelMgr.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Auth.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Agent.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Key/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Key/DSA.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Key/RSA1.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Key/RSA.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/CFB.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/RC4.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/CBC.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/DES.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/DES3.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/IDEA.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Cipher/Blowfish.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Packet.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/AuthMgr.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Comp/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Comp/Zlib.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Kex.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Comp.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/SSH1.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Constants.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Subsystem/
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Subsystem/Server.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Subsystem/Client.pm
+Net-SSH-Perl-1.38/lib/Net/SSH/Perl/Util.pm
+Net-SSH-Perl-1.38/t/
+Net-SSH-Perl-1.38/t/06-circular.t
+Net-SSH-Perl-1.38/t/psshd
+Net-SSH-Perl-1.38/t/99-pod.t
+Net-SSH-Perl-1.38/t/test-common.pl
+Net-SSH-Perl-1.38/t/06-auth.t
+Net-SSH-Perl-1.38/t/00-signature.t
+Net-SSH-Perl-1.38/t/02-buffer.t
+Net-SSH-Perl-1.38/t/99-perlcritic.t
+Net-SSH-Perl-1.38/t/config
+Net-SSH-Perl-1.38/t/01-compile.t
+Net-SSH-Perl-1.38/t/04-config.t
+Net-SSH-Perl-1.38/t/03-packet.t
+Net-SSH-Perl-1.38/t/99-spellcheck.t
+Net-SSH-Perl-1.38/t/05-cipher.t
+Net-SSH-Perl-1.38/t/99-yaml.t
+Net-SSH-Perl-1.38/README
+Net-SSH-Perl-1.38/ToDo
+Net-SSH-Perl-1.38/Makefile.PL
+Net-SSH-Perl-1.38/SIGNATURE
+Net-SSH-Perl-1.38/META.yml
+CPAN: File::Temp loaded ok (v0.2304)
+Using META.yml
+Found: Net-SSH-Perl 1.38 (libnet-ssh-perl-perl arch=all)
+Switched to a new branch 'master'
+No APT contents can be loaded.
+Please install 'apt-file' package (at least version 2.5.0) and
+run 'apt-file update' as root.
+Dependencies not updated.
+Using maintainer: Lucas Nussbaum <lucas@debian.org>
+Found docs: ToDo
+Found examples: eg/*
+Using rules: /usr/share/dh-make-perl/rules.dh.tiny
+pristine-tar: committed libnet-ssh-perl-perl_1.38.orig.tar.gz.delta to branch pristine-tar
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+--- Done

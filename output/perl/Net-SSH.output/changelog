@@ -1,0 +1,5 @@
+libnet-ssh-perl-perl (1.38-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #711099)
+
+ -- Lucas Nussbaum <lucas@debian.org>  Wed, 22 Apr 2015 10:28:44 +0200
