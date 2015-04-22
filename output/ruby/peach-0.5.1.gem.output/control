@@ -1,0 +1,19 @@
+Source: ruby-peach
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Nussbaum <lucas@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-peach.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-peach.git
+Homepage: http://peach.rubyforge.org
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-peach
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, 
+Description: Parallel Each and other parallel things
+ <insert long description, indented with spaces>

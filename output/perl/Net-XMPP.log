@@ -1,0 +1,88 @@
+== dh-make-perl 0.84 ==
+CPAN: File::HomeDir loaded ok (v1.00)
+Reading '/home/lucas/.cpan/Metadata'
+  Database was generated on Tue, 21 Apr 2015 20:17:02 GMT
+CPAN: Digest::SHA loaded ok (v5.88)
+Checksum for /home/lucas/.cpan/sources/authors/id/D/DA/DAPATRICK/Net-XMPP-1.05.tar.gz ok
+CPAN: Archive::Tar loaded ok (v1.96)
+Net-XMPP-1.05
+Net-XMPP-1.05/META.yml
+Net-XMPP-1.05/README
+Net-XMPP-1.05/MANIFEST
+Net-XMPP-1.05/Makefile.PL
+Net-XMPP-1.05/LICENSE
+Net-XMPP-1.05/META.json
+Net-XMPP-1.05/Build.PL
+Net-XMPP-1.05/CHANGES
+Net-XMPP-1.05/SIGNATURE
+Net-XMPP-1.05/examples
+Net-XMPP-1.05/examples/client_xpath.pl
+Net-XMPP-1.05/examples/client.pl
+Net-XMPP-1.05/t
+Net-XMPP-1.05/t/gtalk.t
+Net-XMPP-1.05/t/mytestlib.pl
+Net-XMPP-1.05/t/iq.t
+Net-XMPP-1.05/t/message.t
+Net-XMPP-1.05/t/2_client_jabberd1.4.t
+Net-XMPP-1.05/t/srv.t
+Net-XMPP-1.05/t/memory_cycle.t
+Net-XMPP-1.05/t/3_client_jabberd2.t
+Net-XMPP-1.05/t/node2.xml
+Net-XMPP-1.05/t/query_xxxxx.test
+Net-XMPP-1.05/t/rawxml.t
+Net-XMPP-1.05/t/1_load.t
+Net-XMPP-1.05/t/memory_leak.t
+Net-XMPP-1.05/t/get_time_stamp.test
+Net-XMPP-1.05/t/roster.t
+Net-XMPP-1.05/t/node1.xml
+Net-XMPP-1.05/t/jid.t
+Net-XMPP-1.05/t/presence.t
+Net-XMPP-1.05/t/packet_iqroster.t
+Net-XMPP-1.05/t/packet_iqauth.t
+Net-XMPP-1.05/t/config
+Net-XMPP-1.05/t/config/accounts.yml.copyme
+Net-XMPP-1.05/t/lib
+Net-XMPP-1.05/t/lib/Net
+Net-XMPP-1.05/t/lib/Net/XMPP
+Net-XMPP-1.05/t/lib/Net/XMPP/Test
+Net-XMPP-1.05/t/lib/Net/XMPP/Test/Utils.pm
+Net-XMPP-1.05/lib
+Net-XMPP-1.05/lib/Net
+Net-XMPP-1.05/lib/Net/XMPP.pm
+Net-XMPP-1.05/lib/Net/XMPP
+Net-XMPP-1.05/lib/Net/XMPP/IQ.pm
+Net-XMPP-1.05/lib/Net/XMPP/Presence.pm
+Net-XMPP-1.05/lib/Net/XMPP/Connection.pm
+Net-XMPP-1.05/lib/Net/XMPP/Message.pm
+Net-XMPP-1.05/lib/Net/XMPP/JID.pm
+Net-XMPP-1.05/lib/Net/XMPP/Debug.pm
+Net-XMPP-1.05/lib/Net/XMPP/Roster.pm
+Net-XMPP-1.05/lib/Net/XMPP/Client.pm
+Net-XMPP-1.05/lib/Net/XMPP/Stanza.pm
+Net-XMPP-1.05/lib/Net/XMPP/PrivacyLists.pm
+Net-XMPP-1.05/lib/Net/XMPP/Namespaces.pm
+Net-XMPP-1.05/lib/Net/XMPP/Protocol.pm
+CPAN: File::Temp loaded ok (v0.2304)
+Using META.json
+Found: Net-XMPP 1.05 (libnet-xmpp-perl arch=all)
+Switched to a new branch 'master'
+No APT contents can be loaded.
+Please install 'apt-file' package (at least version 2.5.0) and
+run 'apt-file update' as root.
+Dependencies not updated.
+Module::Build needs perl
+Using maintainer: Lucas Nussbaum <lucas@debian.org>
+Found docs: 
+Found examples: examples/*
+Using rules: /usr/share/dh-make-perl/rules.dh.tiny
+pristine-tar: committed libnet-xmpp-perl_1.05.orig.tar.gz.delta to branch pristine-tar
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+**********
+WARNING: a package named
+              'libnet-xmpp-perl'
+         is already available in APT repositories
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Description: XMPP Perl library
+--- Done

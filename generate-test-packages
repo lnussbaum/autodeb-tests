@@ -1,0 +1,44 @@
+#!/usr/bin/ruby -w
+
+require 'fileutils'
+require 'find'
+require 'pp'
+
+# Get test data:
+# - Ruby: gem fetch GEMNAME
+# - Perl: go to cpan.org, search for package, download manually
+
+origdir = Dir::pwd
+['ruby', 'perl'].each do |lang|
+  Dir::glob("input/#{lang}/*").each do |file|
+    puts "### Processing #{file}"
+    tempdir = `mktemp -d /tmp/autodeb.#{lang}.XXXXXX`.chomp
+    FileUtils::cp(file, tempdir)
+    file = File.basename(file)
+    Dir::chdir(tempdir)
+    case lang
+    when 'ruby' then
+      version = `dpkg -l gem2deb | grep ^ii`
+      log = `gem2deb -s #{file} 2>&1`
+    when 'perl' then
+      version = `dpkg -l dh-make-perl | grep ^ii`
+      log = `./#{file} 2>&1` # execute the command provided in the file
+    else
+      raise "Unknown language: #{lang}"
+    end
+    raise "Generation failed" if $?.exitstatus != 0
+    control = Find.find('.').grep(/\/debian\/control$/)
+    raise "More than one debian/control file found: #{control}" if control.length > 1
+    odir = File.expand_path(File.dirname(control.first))
+    Dir::chdir(origdir)
+    FileUtils::mkdir_p("output/#{lang}")
+    Dir::glob("output/#{lang}/#{file}.*").each { |f| FileUtils::rm_rf(f) }
+    FileUtils::mv(odir, "output/#{lang}/#{file}.output")
+    File::open("output/#{lang}/#{file}.log", 'w') { |fd| fd.print log }
+    File::open("output/#{lang}/#{file}.version", 'w') { |fd| fd.print version }
+    FileUtils::rm_rf(tempdir)
+  end
+end
+
+
+

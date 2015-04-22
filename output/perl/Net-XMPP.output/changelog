@@ -1,0 +1,5 @@
+libnet-xmpp-perl (1.05-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Lucas Nussbaum <lucas@debian.org>  Wed, 22 Apr 2015 09:57:34 +0200

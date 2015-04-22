@@ -1,0 +1,12 @@
+-- Creating source tarball from peach-0.5.1.gem ...
+tar xfm /tmp/autodeb.ruby.lQqbZh/peach-0.5.1.gem
+"tar xzfm data.tar.gz"
+"zcat metadata.gz > metadata.yml"
+tar czf /tmp/autodeb.ruby.lQqbZh/peach-0.5.1.tar.gz peach-0.5.1
+-- Successfully created ./peach-0.5.1.tar.gz
+
+-- Creating Debian source package from ./peach-0.5.1.tar.gz ...
+ln -s peach-0.5.1.tar.gz ruby-peach_0.5.1.orig.tar.gz
+tar xzf ruby-peach_0.5.1.orig.tar.gz
+dch --create --empty --package ruby-peach --newversion 0.5.1-1 "Initial release (Closes: #nnnn)"
+-- Generated Debian source tree in ruby-peach-0.5.1

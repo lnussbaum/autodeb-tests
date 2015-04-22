@@ -1,0 +1,5 @@
+ruby-peach (0.5.1-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Lucas Nussbaum <lucas@debian.org>  Wed, 22 Apr 2015 09:57:33 +0200
