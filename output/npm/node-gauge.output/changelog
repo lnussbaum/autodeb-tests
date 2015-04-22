@@ -1,0 +1,6 @@
+node-gauge (1.2.0-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #nnnn)
+
+ -- Lucas Nussbaum <lucas@debian.org>  Wed, 22 Apr 2015 22:04:33 +0200
+

@@ -1,0 +1,29 @@
+Source: node-gauge
+Section: web
+Priority: extra
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Lucas Nussbaum <lucas@debian.org>
+Build-Depends:
+ debhelper (>= 8)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.6
+Homepage: https://github.com/iarna/gauge
+Vcs-Git: git://anonscm.debian.org/pkg-javascript/node-gauge.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/node-gauge.git
+XS-Testsuite: autopkgtest
+
+Package: node-gauge
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-lodash.padleft (^3.0.0)
+ , node-lodash.padright (^3.0.0)
+ , node-lodash.pad (^3.0.0)
+ , node-has-unicode (^1.0.0)
+ , node-ansi (^0.3.0)
+Description: A terminal based horizontal guage
+ FIX_ME long description
+ .
+ Node.js is an event-based server-side JavaScript engine.

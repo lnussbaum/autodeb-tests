@@ -1,0 +1,16 @@
+gauge/node-gauge/debian/control: FIX_ME long description
+
+This is not a crystal ball, so please take a look at auto-generated files.
+
+You may want fix first these issues:
+
+
+Use uscan to get orig source files. Fix debian/watch and then run            
+$ uscan --download-current-version
+
+Warnings occured:
+ [error]   has-unicode: dependency node-has-unicode not in debian
+ [error]   lodash.padleft: dependency node-lodash.padleft not in debian
+ [error]   lodash.pad: dependency node-lodash.pad not in debian
+ [error]   lodash.padright: dependency node-lodash.padright not in debian
+
