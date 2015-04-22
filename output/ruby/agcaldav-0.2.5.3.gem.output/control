@@ -1,0 +1,19 @@
+Source: ruby-agcaldav
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Nussbaum <lucas@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-rspec, rake, ruby-icalendar, ruby-uuid, ruby-builder
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-agcaldav.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-agcaldav.git
+Homepage: https://github.com/agilastic/agcaldav
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-agcaldav
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-icalendar, ruby-uuid, ruby-builder
+Description: Ruby CalDAV client
+ agcaldav is yet another great Ruby client for CalDAV calendar.  It is based on the icalendar gem.

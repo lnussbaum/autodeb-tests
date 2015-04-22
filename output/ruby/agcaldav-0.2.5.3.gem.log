@@ -1,0 +1,12 @@
+-- Creating source tarball from agcaldav-0.2.5.3.gem ...
+tar xfm /tmp/autodeb.ruby.2C1vqh/agcaldav-0.2.5.3.gem
+"tar xzfm data.tar.gz"
+"zcat metadata.gz > metadata.yml"
+tar czf /tmp/autodeb.ruby.2C1vqh/agcaldav-0.2.5.3.tar.gz agcaldav-0.2.5.3
+-- Successfully created ./agcaldav-0.2.5.3.tar.gz
+
+-- Creating Debian source package from ./agcaldav-0.2.5.3.tar.gz ...
+ln -s agcaldav-0.2.5.3.tar.gz ruby-agcaldav_0.2.5.3.orig.tar.gz
+tar xzf ruby-agcaldav_0.2.5.3.orig.tar.gz
+dch --create --empty --package ruby-agcaldav --newversion 0.2.5.3-1 "Initial release (Closes: #nnnn)"
+-- Generated Debian source tree in ruby-agcaldav-0.2.5.3
